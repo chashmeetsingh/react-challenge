@@ -1,1 +1,1 @@
-touchbistro
+TouchBistro - Intermediate Full Stack Developer Challenge
