@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './views/containers/App';
 import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
@@ -15,8 +15,6 @@ ReactDOM.render(
     <Router>
       <App>
         <Route exact path='/' component={Home}/>
-        {/*<Route exact path='/current-weather' component={CurrentWeather}/>*/}
-        {/*<Route exact path='/error' component={ErrorDisplay}/>*/}
       </App>
     </Router>
   </Provider>,

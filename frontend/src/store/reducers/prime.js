@@ -26,7 +26,6 @@ export default (state = defaultState, action) => {
       }
     }
     case PRIME.GET_PRIMES_ERROR: {
-      console.log('error', action);
       return {
         ...state,
         error: action.error,

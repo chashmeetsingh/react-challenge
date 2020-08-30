@@ -1,9 +1,11 @@
+const ResponseCodes = require('../constants/response')
+
 function median(nums, callback) {
-  if(nums.length === 0) return callback({
-    data: 0
+  if(!nums || nums.length === 0) return callback({
+    error: ResponseCodes.Constants.EMPTY_ARRAY_FOR_MEDIAN
   });
 
-  nums.sort(function(a,b){
+  nums.sort((a,b) => {
     return a-b;
   });
 

@@ -9,7 +9,7 @@ function getPrimeNumbers(maxNumber, callback) {
   }
 
   // mark all numbers as prime
-  const is_prime = new Array(maxNumber + 1).fill(true);
+  const is_prime = new Array(maxNumber).fill(true);
 
   // 0 and 1 are not prime
   is_prime[0] = false;

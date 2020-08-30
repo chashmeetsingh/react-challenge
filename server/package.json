@@ -1,0 +1,29 @@
+{
+  "name": "prime-numbers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jest",
+    "test:watch": "./node_modules/.bin/jest --watch"
+  },
+  "author": "Chashmeet Singh",
+  "license": "ISC",
+  "dependencies": {
+    "@jest/globals": "^26.4.2",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "prettier": "^2.1.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "jest": "^26.4.2",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
