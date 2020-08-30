@@ -33,7 +33,7 @@ class PrimeInput extends React.Component {
 
       if (this.props.error || this.props.median)
         return (
-          <Alert variant={variant}>
+          <Alert variant={variant} id={"result"}>
             {
               this.props.error
                 ? this.props.error.toString()
@@ -46,7 +46,7 @@ class PrimeInput extends React.Component {
     const renderLoading = () => {
       if (this.props.loading)
         return (
-          <Spinner animation="border" role="status">
+          <Spinner id={"spinner"} animation="border" role="status">
             <span className="sr-only">Loading...</span>
           </Spinner>
         )
@@ -66,7 +66,7 @@ class PrimeInput extends React.Component {
         </InputGroup>
         <InputGroup.Append>
           <div className="mb-2">
-            <Button variant="dark" size="lg" onClick={() => this.getMedian(100)}>
+            <Button variant="dark" id={"submit"} size="lg" onClick={() => this.getMedian(100)}>
               Get Median
             </Button>
           </div>
