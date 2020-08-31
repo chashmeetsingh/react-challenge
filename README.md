@@ -12,8 +12,14 @@ cd frontend
 npm start
 ```
 
-### Run tests
+### Run tests for server
 ```
 cd server
+npm run test
+```
+
+### Run tests for frontend
+```
+cd frontend
 npm run test
 ```
